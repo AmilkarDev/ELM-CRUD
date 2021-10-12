@@ -3,7 +3,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css">
     
   <style>
-    /* you can style your program here */
   </style>
 </head>
 <body>
@@ -13,7 +12,6 @@
   <script>
     
     var getLocations = function(){
-      console.log("Hellloooooooooooooooooooooooooooooooooooooooooooo");
       var locations = JSON.parse(localStorage.locations || '[]' ) || [];
       console.log("get Locations :" + locations);
       return locations ? locations : [] ;
@@ -28,7 +26,6 @@
     app.ports.saveLocations.subscribe(function(locations) {
       localStorage.locations = JSON.stringify(locations);
     });
-    // you can use ports and stuff here
   </script>
 </body>
 </html>

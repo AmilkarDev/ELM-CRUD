@@ -16,8 +16,6 @@ import Bulma.Layout exposing (..)
 import Bulma.Modifiers exposing (..)
 
 
--- We added a new AddTodo message type.
-
 type alias Location = {  name:String , description:String }
 
 type Msg
